@@ -1,3 +1,4 @@
+# 75 747
 # LeetCode 75 - Sort Colors
 
 ## Problem Statement
@@ -11,4 +12,20 @@ We repeatedly compare adjacent elements and swap them if they are out of order.
 This ensures that after each pass, the largest element moves to the end.
 
 
+# LeetCode 747 - Largest Number At Least Twice of Others
+
+## Problem Statement
+Given an integer array `nums`, return the index of the largest element if it is at least twice as large as every other number in the array. Otherwise, return -1.
+
+- Input: nums = [3,6,1,0]
+- Output: 1 (since 6 is at least twice of all others)
+
+---
+## Approach 1: Brute Force (O(n log n))
+We copy the array, sort it, and then check if the largest element is at least twice the second largest.  
+Finally, we return the index of the largest element from the original array.
+## Approach: Optimized O(n)
+Instead of sorting, we find the largest and second largest elements in a single pass.  
+Then check if `largest >= 2 * secondLargest`.  
+If true, return the index of the largest element; otherwise return -1.
    
