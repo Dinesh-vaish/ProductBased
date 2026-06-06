@@ -1,4 +1,4 @@
-# 75 747
+# 75 747  414 
 # LeetCode 75 - Sort Colors
 
 ## Problem Statement
@@ -29,3 +29,22 @@ Instead of sorting, we find the largest and second largest elements in a single 
 Then check if `largest >= 2 * secondLargest`.  
 If true, return the index of the largest element; otherwise return -1.
    
+
+   # LeetCode 414 - Third Maximum Number
+
+## Problem Statement
+Given an integer array `nums`, return the third distinct maximum number in this array.  
+If the third maximum does not exist, return the maximum number.
+
+- Input: nums = [3,2,1]
+- Output: 1
+- Input: nums = [1,2]
+- Output: 2
+- Input: nums = [2,2,3,1]
+- Output: 1
+
+---
+
+## Approach: Optimized O(n)
+We keep track of the **first**, **second**, and **third** distinct maximums in a single pass.  
+Duplicates are skipped to ensure distinct values.
