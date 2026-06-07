@@ -1,4 +1,4 @@
-# 75 747  414 
+# 75 747  414  506  215
 # LeetCode 75 - Sort Colors
 
 ## Problem Statement
@@ -48,3 +48,11 @@ If the third maximum does not exist, return the maximum number.
 ## Approach: Optimized O(n)
 We keep track of the **first**, **second**, and **third** distinct maximums in a single pass.  
 Duplicates are skipped to ensure distinct values.
+
+# LeetCode 506: Relative Ranks
+
+## Problem Statement
+Given an array `score[i]` representing athletes’ scores, assign ranks:
+- Highest score → "Gold Medal"
+- 2nd highest → "Silver Medal"
+- 3rd highest → "Bronze Medal"
